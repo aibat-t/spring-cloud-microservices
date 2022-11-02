@@ -17,7 +17,7 @@ public class BillResponseDTO {
 
     private BigDecimal amount;
 
-    private Boolean isDecimal;
+    private Boolean isDefault;
 
     private OffsetDateTime creationDate;
 
@@ -27,7 +27,7 @@ public class BillResponseDTO {
         billId = bill.getBillId();
         accountId = bill.getAccountId();
         amount = bill.getAmount();
-        isDecimal = bill.getIsDecimal();
+        isDefault = bill.getIsDefault();
         creationDate = bill.getCreationDate();
         overdraftEnabled = bill.getOverdraftEnabled();
     }

@@ -30,6 +30,6 @@ public class AccountController {
 
     @DeleteMapping("/{accountId}")
     public AccountResponseDTO deleteAccount(@PathVariable Long accountId){
-        return new AccountResponseDTO(accountService.delateAccount(accountId));
+        return new AccountResponseDTO(accountService.deleteAccount(accountId));
     }
 }

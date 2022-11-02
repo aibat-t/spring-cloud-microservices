@@ -24,25 +24,25 @@ public class Bill {
 
     private BigDecimal amount;
 
-    private Boolean isDecimal;
+    private Boolean isDefault;
 
     private OffsetDateTime creationDate;
 
     private Boolean overdraftEnabled;
 
-    public Bill(Long accountId, BigDecimal amount, Boolean isDecimal, OffsetDateTime creationDate, Boolean overdraftEnabled) {
+    public Bill(Long accountId, BigDecimal amount, Boolean isDefault, OffsetDateTime creationDate, Boolean overdraftEnabled) {
         this.accountId = accountId;
         this.amount = amount;
-        this.isDecimal = isDecimal;
+        this.isDefault = isDefault;
         this.creationDate = creationDate;
         this.overdraftEnabled = overdraftEnabled;
     }
 
-    public Bill(Long billId, Long accountId, BigDecimal amount, Boolean isDecimal, Boolean overdraftEnabled) {
+    public Bill(Long billId, Long accountId, BigDecimal amount, Boolean isDefault, Boolean overdraftEnabled) {
         this.billId = billId;
         this.accountId = accountId;
         this.amount = amount;
-        this.isDecimal = isDecimal;
+        this.isDefault = isDefault;
         this.overdraftEnabled = overdraftEnabled;
     }
 }

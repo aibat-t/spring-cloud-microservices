@@ -12,7 +12,7 @@ public class BillRequestDTO {
 
     private BigDecimal amount;
 
-    private Boolean isDecimal;
+    private Boolean isDefault;
 
     private OffsetDateTime creationDate;
 

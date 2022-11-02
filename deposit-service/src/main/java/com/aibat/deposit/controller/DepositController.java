@@ -9,6 +9,6 @@ public class DepositController {
 
     @PostMapping("/deposits")
     public DepositResponseDTO deposit(){
-
+        return new DepositResponseDTO();
     }
 }
