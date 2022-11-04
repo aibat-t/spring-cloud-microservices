@@ -30,4 +30,11 @@ public class Deposit {
     private OffsetDateTime creationDate;
 
     private String email;
+
+    public Deposit(BigDecimal amount, Long billId, OffsetDateTime creationDate, String email) {
+        this.amount = amount;
+        this.billId = billId;
+        this.creationDate = creationDate;
+        this.email = email;
+    }
 }

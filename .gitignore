@@ -10,3 +10,4 @@ notification-service/build
 registry/build
 gateway/build
 
+notification-service/src/main/resources/mail-props.properties
