@@ -7,7 +7,7 @@ spring:
     properties:
   datasource:
     platform: postgres
-    url: jdbc:postgresql://192.168.0.109:5432/
+    url: jdbc:postgresql://192.168.0.109:5432/account_service_database
     username: postgres1
     password: postgres1
     driver-class-name: org.postgresql.Driver
