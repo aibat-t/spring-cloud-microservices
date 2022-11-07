@@ -7,7 +7,7 @@ spring:
     properties:
   datasource:
     platform: postgres
-    url: jdbc:postgresql://localhost:5432/deposit_service_database
+    url: jdbc:postgresql://192.168.0.109:5432/deposit_service_database
     username: postgres
     password: postgres
     driver-class-name: org.postgresql.Driver
@@ -20,3 +20,6 @@ spring:
     listener:
       direct:
         default-requeue-rejected: true
+
+server:
+  port: 8083
